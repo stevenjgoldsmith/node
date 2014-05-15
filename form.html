@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style type="text/css">
+input{
+font-size: 200%;
+color: green;
+required: true;
+}
+label{
+font-size: 200%;
+color: green;
+}
+h1{
+color: red;
+}
+button{
+font-size: 200%;
+color: navy;
+}
+
+.styled select {
+   background: transparent;
+   width: 80%;
+   padding: 5px;
+   font-size: 200%;
+   border: 1px solid #ccc;
+   
+   color:blue;
+    -webkit-appearance: none;
+} 
+
+ </style>
+  <meta charset="utf-8" />
+  <title>Condition</title>
+<script>
+
+</script> </head>
+ <body>
+<form id="form1" name="form1" method="post" action="getData">
+  <h1>Expenses</h1>
+   <label>Date:</label>
+  <input type="date" id="date" name="date" autofocus required> <br> 
+  <label>Amount:</label>
+  <input type="number" id="amount" name="amount" required><br>
+  <label>Expense:</label>
+  <div class="styled"><select id="expense" name="expense" required ></div>
+  <option>Fuel</option>
+  <option>Food</option>
+  
